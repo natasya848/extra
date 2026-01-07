@@ -1,0 +1,15 @@
+CRITICAL - 2025-11-03 06:15:44 --> TypeError: number_format(): Argument #1 ($num) must be of type float, string given
+[Method: GET, Route: laporan/exportPDF]
+in APPPATH\Views\laporan\laporan_keuangan.php on line 141.
+ 1 APPPATH\Views\laporan\laporan_keuangan.php(141): number_format('Kas', 0, ',', '.')
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\laporan_keuangan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/laporan_keuangan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(120): view('laporan/laporan_keuangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportPDF()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')

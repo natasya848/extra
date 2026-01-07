@@ -1,0 +1,1749 @@
+CRITICAL - 2025-10-15 03:32:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pageuser/index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pageuser/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pageuser/index', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('pageuser/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:32:54 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:32:57 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:34:42 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:34:44 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:36:29 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:38:09 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:40:05 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/updateCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/updateCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:40:09 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/updateCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/updateCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:40:10 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/updateCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/updateCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:41:56 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/updateCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/updateCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:41:59 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:42:02 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:42:03 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:42:08 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:45:54 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:45:59 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/updateCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/updateCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:46:06 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/updateCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/updateCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:50:22 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:50:23 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:50:26 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addToCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addToCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:50:28 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/updateCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/updateCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:56:05 --> Error: Cannot use object of type stdClass as array
+[Method: POST, Route: kasir/scanProduk]
+in APPPATH\Controllers\Kasir.php on line 117.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->scanProduk()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:56:09 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/scanProduk]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/scanProduk', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 03:56:12 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/scanProduk]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/scanProduk', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:00:09 --> Error: Call to undefined method CodeIgniter\View\View::generateKodeTransaksi()
+[Method: GET, Route: kasir/checkout]
+in APPPATH\Views\kasir\checkout.php on line 73.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kasir/checkout', [], true)
+ 4 APPPATH\Controllers\Kasir.php(61): view('kasir/checkout', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->checkout()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 04:10:55 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `produk`...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `produk`...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `produk`...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `produk`...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(1031): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\Users\User\Music\kasir\system\Model.php(863): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(279): CodeIgniter\Model->update('1', Array)
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#10 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#15 {main}
+CRITICAL - 2025-10-15 04:10:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: kasir/selesaikanTransaksi]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `produk` SET `stok` = :stok:, `updated_at` = :updated_at:
+WHERE `produk`.`id_produk` IN :produk.id_produk:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\Kasir.php(279): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:10:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `produk` SET `stok` = 7, `updated_at` = \'2025-10-15 04:10:55\'
+WHERE `produk`.`id_produk` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `produk` SET `stok` = 7, `updated_at` = \'2025-10-15 04:10:55\'
+WHERE `produk`.`id_produk` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `produk` SET `stok` = :stok:, `updated_at` = :updated_at:
+WHERE `produk`.`id_produk` IN :produk.id_produk:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\Kasir.php(279): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:10:55 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `produk` SET `stok` = 7, `updated_at` = \'2025-10-15 04:10:55\'
+WHERE `produk`.`id_produk` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `produk` SET `stok` = 7, `updated_at` = \'2025-10-15 04:10:55\'
+WHERE `produk`.`id_produk` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `produk` SET `stok` = 7, `updated_at` = \'2025-10-15 04:10:55\'
+WHERE `produk`.`id_produk` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `produk` SET `stok` = :stok:, `updated_at` = :updated_at:
+WHERE `produk`.`id_produk` IN :produk.id_produk:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1031): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(863): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\Kasir.php(279): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 04:13:41 --> mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, ...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, ...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, ...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, ...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 04:13:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+[Method: GET, Route: transaksi_penjualan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:13:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:13:41 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:13:43 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: detail_penjualan]
+in APPPATH\Views\detail_penjualan\v_detail_penjualan.php on line 63.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('detail_penjualan/v_detail_penjualan', [], true)
+ 4 APPPATH\Controllers\Detail_penjualan.php(22): view('detail_penjualan/v_detail_penjualan', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Detail_penjualan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Detail_penjualan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:14:23 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: produk/getHarga]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('produk/getHarga', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 04:14:28 --> mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, ...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, ...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, ...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, ...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 04:14:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+[Method: GET, Route: transaksi_penjualan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:14:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:14:28 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 04:14:47 --> mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, ...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, ...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, ...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, ...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 04:14:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+[Method: GET, Route: transaksi_penjualan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:14:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:14:47 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Transaksi_penjualan.php(16): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi_penjualan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi_penjualan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:45:31 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "layout/main.php"
+[Method: GET, Route: transaksi]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layout/main.php')
+ 2 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 4 APPPATH\Controllers\Transaksi.php(32): view('transaksi/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 04:49:51 --> CodeIgniter\Exceptions\RuntimeException: View themes, no current section.
+[Method: GET, Route: transaksi]
+in SYSTEMPATH\View\View.php on line 430.
+ 1 APPPATH\Views\transaksi\index.php(127): CodeIgniter\View\View->endSection()
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\transaksi\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('transaksi/index', [], true)
+ 5 APPPATH\Controllers\Transaksi.php(33): view('transaksi/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaksi->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaksi))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 07:19:28 --> mysqli_sql_exception: Unknown column 'u.nama_lengkap' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.`id...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.`id...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.`id...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 07:19:28 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'u.nama_lengkap' in 'field list'
+[Method: GET, Route: kasir/getRiwayatTransaksi]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', [], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 07:19:28 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'u.nama_lengkap' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', [], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 07:19:28 --> [Caused by] mysqli_sql_exception: Unknown column 'u.nama_lengkap' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', [], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 07:23:26 --> mysqli_sql_exception: Unknown column 'u.nama_lengkap' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.`id...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.`id...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.`id...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 07:23:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'u.nama_lengkap' in 'field list'
+[Method: GET, Route: kasir/getRiwayatTransaksi]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', [], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 07:23:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'u.nama_lengkap' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', [], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 07:23:26 --> [Caused by] mysqli_sql_exception: Unknown column 'u.nama_lengkap' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.`id_transaksi`, `tp`.`kode_transaksi`, `tp`.`tanggal`, `tp`.`total_harga` as `total`, `tp`.`metode_bayar`, `tp`.`status`, `u`.`nama_lengkap` as `nama_kasir`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+ORDER BY `tp`.`id_transaksi` DESC', [], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(62): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(301): App\Models\M_transaksi_penjualan->getRiwayat()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->getRiwayatTransaksi()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 07:59:54 --> ErrorException: Undefined variable $transaksi
+[Method: GET, Route: kasir]
+in APPPATH\Views\kasir\v_kasir.php on line 259.
+ 1 APPPATH\Views\kasir\v_kasir.php(259): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $transaksi', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\kasir\\v_kasir.php', 259)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\kasir\\v_kasir.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kasir/v_kasir', [], true)
+ 5 APPPATH\Controllers\Kasir.php(22): view('kasir/v_kasir', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:07:01 --> ErrorException: Undefined property: App\Controllers\Kasir::$transaksiModel
+[Method: GET, Route: kasir/edit/6]
+in APPPATH\Controllers\Kasir.php on line 340.
+ 1 APPPATH\Controllers\Kasir.php(340): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kasir::$transaksiModel', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Kasir.php', 340)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:07:08 --> ErrorException: Undefined property: App\Controllers\Kasir::$transaksiModel
+[Method: GET, Route: kasir/edit/1]
+in APPPATH\Controllers\Kasir.php on line 340.
+ 1 APPPATH\Controllers\Kasir.php(340): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kasir::$transaksiModel', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Kasir.php', 340)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:07:22 --> ErrorException: Undefined property: App\Controllers\Kasir::$transaksiModel
+[Method: GET, Route: kasir/edit/6]
+in APPPATH\Controllers\Kasir.php on line 340.
+ 1 APPPATH\Controllers\Kasir.php(340): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kasir::$transaksiModel', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Kasir.php', 340)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:09:51 --> ErrorException: Undefined property: App\Controllers\Kasir::$M_transaksi
+[Method: GET, Route: kasir/edit/6]
+in APPPATH\Controllers\Kasir.php on line 340.
+ 1 APPPATH\Controllers\Kasir.php(340): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kasir::$M_transaksi', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Kasir.php', 340)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 08:14:44 --> mysqli_sql_exception: Table 'kasir_fotocopy.transaksi' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 08:14:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.transaksi' doesn't exist
+[Method: GET, Route: kasir/edit/6]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:14:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.transaksi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:14:44 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.transaksi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 08:16:08 --> mysqli_sql_exception: Table 'kasir_fotocopy.detail_transaksi' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 08:16:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.detail_transaksi' doesn't exist
+[Method: GET, Route: kasir/edit/6]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:16:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.detail_transaksi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:16:08 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.detail_transaksi' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_transaksi` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 08:16:47 --> mysqli_sql_exception: Unknown column 'td.harga' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 08:16:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+[Method: GET, Route: kasir/edit/6]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:16:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:16:47 --> [Caused by] mysqli_sql_exception: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 08:28:16 --> mysqli_sql_exception: Unknown column 'td.harga' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('1')
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->edit('1')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 08:28:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+[Method: GET, Route: kasir/edit/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('1')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:28:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'1\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:28:16 --> [Caused by] mysqli_sql_exception: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'1\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'1\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'1\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('1')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 08:35:29 --> mysqli_sql_exception: Unknown column 'td.harga' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 08:35:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+[Method: GET, Route: kasir/edit/6]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:35:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:35:29 --> [Caused by] mysqli_sql_exception: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 08:36:11 --> mysqli_sql_exception: Unknown column 'td.harga' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 08:36:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+[Method: GET, Route: kasir/edit/6]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:36:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:36:11 --> [Caused by] mysqli_sql_exception: Unknown column 'td.harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-15 08:39:15 --> mysqli_sql_exception: Unknown column 'td.total_harga' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-15 08:39:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.total_harga' in 'field list'
+[Method: GET, Route: kasir/edit/6]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:39:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'td.total_harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:39:15 --> [Caused by] mysqli_sql_exception: Unknown column 'td.total_harga' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = \'6\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `t`.*, `td`.`id_produk`, `td`.`jumlah`, `td`.`total_harga`, `p`.`nama_produk`, `p`.`kode_barcode`
+FROM `transaksi_penjualan` `t`
+LEFT JOIN `detail_penjualan` `td` ON `td`.`id_transaksi` = `t`.`id_transaksi`
+LEFT JOIN `produk` `p` ON `p`.`id_produk` = `td`.`id_produk`
+WHERE `t`.`id_transaksi` = :t.id_transaksi:', [...], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(73): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Kasir.php(343): App\Models\M_transaksi_penjualan->getTransaksiWithDetail('6')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 08:43:08 --> ErrorException: Undefined array key "detail"
+[Method: GET, Route: kasir/edit/6]
+in APPPATH\Views\kasir\v_edit_transaksi.php on line 100.
+ 1 APPPATH\Views\kasir\v_edit_transaksi.php(100): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "detail"', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\kasir\\v_edit_transaksi.php', 100)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\kasir\\v_edit_transaksi.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('kasir/v_edit_transaksi', [], true)
+ 5 APPPATH\Controllers\Kasir.php(350): view('kasir/v_edit_transaksi', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 09:31:21 --> ErrorException: Undefined property: App\Controllers\Kasir::$transaksiModel
+[Method: POST, Route: kasir/removeCartDetail]
+in APPPATH\Controllers\Kasir.php on line 381.
+ 1 APPPATH\Controllers\Kasir.php(381): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kasir::$transaksiModel', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Kasir.php', 381)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->removeCartDetail()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 09:31:30 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 09:31:33 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:26 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:28 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:29 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:30 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:32 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:32 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:32 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:33 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:33 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:33 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:06:34 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-15 10:19:43 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')

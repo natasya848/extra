@@ -1,0 +1,432 @@
+ERROR - 2025-10-21 01:51:32 --> mysqli_sql_exception: Unknown column 'id_akun_debit' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `ju...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ju...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ju...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ju...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(843): CodeIgniter\Model->doInsert(Array)
+#6 C:\Users\User\Music\kasir\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(307): CodeIgniter\Model->insert(Array)
+#8 C:\Users\User\Music\kasir\app\Controllers\Kasir.php(284): App\Controllers\Kasir->createJournalEntryForSales(10, 65300.0, 'Cash')
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+#10 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+#11 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#16 {main}
+CRITICAL - 2025-10-21 01:51:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_akun_debit' in 'field list'
+[Method: POST, Route: kasir/selesaikanTransaksi]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (:tanggal:, :keterangan:, :id_akun_debit:, :debit:, :id_akun_kredit:, :kredit:, :id_transaksi:, :tipe:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Kasir.php(307): CodeIgniter\Model->insert([...])
+ 6 APPPATH\Controllers\Kasir.php(284): App\Controllers\Kasir->createJournalEntryForSales(10, 65300.0, 'Cash')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 01:51:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_akun_debit' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (\'2025-10-21\', \'Penjualan - INV-20251021-FE8B\', 3, 65300, 2, 65300, 10, \'Penjualan\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (\'2025-10-21\', \'Penjualan - INV-20251021-FE8B\', 3, 65300, 2, 65300, 10, \'Penjualan\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (:tanggal:, :keterangan:, :id_akun_debit:, :debit:, :id_akun_kredit:, :kredit:, :id_transaksi:, :tipe:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Kasir.php(307): CodeIgniter\Model->insert([...])
+ 8 APPPATH\Controllers\Kasir.php(284): App\Controllers\Kasir->createJournalEntryForSales(10, 65300.0, 'Cash')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 01:51:32 --> [Caused by] mysqli_sql_exception: Unknown column 'id_akun_debit' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (\'2025-10-21\', \'Penjualan - INV-20251021-FE8B\', 3, 65300, 2, 65300, 10, \'Penjualan\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (\'2025-10-21\', \'Penjualan - INV-20251021-FE8B\', 3, 65300, 2, 65300, 10, \'Penjualan\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (\'2025-10-21\', \'Penjualan - INV-20251021-FE8B\', 3, 65300, 2, 65300, 10, \'Penjualan\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `jurnal` (`tanggal`, `keterangan`, `id_akun_debit`, `debit`, `id_akun_kredit`, `kredit`, `id_transaksi`, `tipe`) VALUES (:tanggal:, :keterangan:, :id_akun_debit:, :debit:, :id_akun_kredit:, :kredit:, :id_transaksi:, :tipe:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(843): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Kasir.php(307): CodeIgniter\Model->insert([...])
+ 9 APPPATH\Controllers\Kasir.php(284): App\Controllers\Kasir->createJournalEntryForSales(10, 65300.0, 'Cash')
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 02:02:23 --> ErrorException: Undefined property: App\Controllers\Kasir::$jurnalModel
+[Method: POST, Route: kasir/selesaikanTransaksi]
+in APPPATH\Controllers\Kasir.php on line 302.
+ 1 APPPATH\Controllers\Kasir.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Kasir::$jurnalModel', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Kasir.php', 302)
+ 2 APPPATH\Controllers\Kasir.php(284): App\Controllers\Kasir->createJournalEntryForSales(11, 65300.0, 'Cash')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 02:03:17 --> ErrorException: Undefined variable $no_invoice
+[Method: POST, Route: kasir/selesaikanTransaksi]
+in APPPATH\Controllers\Kasir.php on line 304.
+ 1 APPPATH\Controllers\Kasir.php(304): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $no_invoice', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Kasir.php', 304)
+ 2 APPPATH\Controllers\Kasir.php(284): App\Controllers\Kasir->createJournalEntryForSales(12, 65300.0, 'Cash')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Kasir->selesaikanTransaksi()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasir))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 02:07:20 --> ErrorException: Undefined property: stdClass::$created_by
+[Method: GET, Route: produk/detail/6]
+in APPPATH\Controllers\Produk.php on line 61.
+ 1 APPPATH\Controllers\Produk.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$created_by', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Produk.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->detail('6')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 04:14:29 --> ErrorException: Undefined array key "debit"
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\keuangan.php on line 166.
+ 1 APPPATH\Views\laporan\keuangan.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "debit"', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php', 166)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/keuangan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(74): view('laporan/keuangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 04:15:04 --> ErrorException: Undefined array key "debit"
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\keuangan.php on line 166.
+ 1 APPPATH\Views\laporan\keuangan.php(166): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "debit"', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php', 166)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/keuangan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(74): view('laporan/keuangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 06:50:42 --> ErrorException: Undefined property: stdClass::$created_by
+[Method: GET, Route: produk/detail/1]
+in APPPATH\Controllers\Produk.php on line 61.
+ 1 APPPATH\Controllers\Produk.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$created_by', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Produk.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 06:59:52 --> ErrorException: Undefined property: stdClass::$created_by
+[Method: GET, Route: produk/detail/1]
+in APPPATH\Controllers\Produk.php on line 61.
+ 1 APPPATH\Controllers\Produk.php(61): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$created_by', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Produk.php', 61)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->detail('1')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 07:00:33 --> ErrorException: Undefined variable $user
+[Method: GET, Route: produk/detail/1]
+in APPPATH\Views\produk\detail.php on line 24.
+ 1 APPPATH\Views\produk\detail.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\detail.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('produk/detail', [], true)
+ 5 APPPATH\Controllers\Produk.php(76): view('produk/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 07:00:46 --> ErrorException: Undefined variable $user
+[Method: GET, Route: produk/detail/1]
+in APPPATH\Views\produk\detail.php on line 24.
+ 1 APPPATH\Views\produk\detail.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\detail.php', 24)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\detail.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('produk/detail', [], true)
+ 5 APPPATH\Controllers\Produk.php(76): view('produk/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 07:02:22 --> ErrorException: Undefined array key "debit"
+[Method: GET, Route: laporan/exportPDF]
+in APPPATH\Views\laporan\laporan_keuangan.php on line 141.
+ 1 APPPATH\Views\laporan\laporan_keuangan.php(141): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "debit"', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\laporan_keuangan.php', 141)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\laporan_keuangan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/laporan_keuangan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(128): view('laporan/laporan_keuangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportPDF()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 07:26:40 --> ErrorException: Undefined array key "tipe"
+[Method: GET, Route: laporan/exportPDF]
+in APPPATH\Views\laporan\laporan_keuangan.php on line 144.
+ 1 APPPATH\Views\laporan\laporan_keuangan.php(144): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tipe"', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\laporan_keuangan.php', 144)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\laporan_keuangan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/laporan_keuangan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(120): view('laporan/laporan_keuangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportPDF()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 08:10:41 --> ErrorException: Undefined array key "status_aktif"
+[Method: POST, Route: login/aksi_login]
+in APPPATH\Controllers\Login.php on line 58.
+ 1 APPPATH\Controllers\Login.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "status_aktif"', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Login.php', 58)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-21 12:23:29 --> mysqli_sql_exception: MySQL server has gone away in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\Users\User\Music\kasir\app\Controllers\Login.php(46): CodeIgniter\BaseModel->first()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2025-10-21 12:23:29 --> CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+[Method: POST, Route: login/aksi_login]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(46): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 12:23:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'roose@i\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'roose@i\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Login.php(46): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 12:23:29 --> [Caused by] mysqli_sql_exception: MySQL server has gone away
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `users`
+WHERE `email` = \'roose@i\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `email` = \'roose@i\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `email` = \'roose@i\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Login.php(46): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->aksi_login()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 12:26:00 --> Error: Class "App\Models\ProdukModel" not found
+[Method: POST, Route: barcode/check]
+in APPPATH\Controllers\Barcode.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barcode->check()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barcode))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-21 12:26:19 --> mysqli_sql_exception: Unknown column 'barcode' in 'where clause' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\Users\User\Music\kasir\app\Controllers\Barcode.php(27): CodeIgniter\BaseModel->first()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Barcode->check()
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barcode))
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2025-10-21 12:26:19 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'barcode' in 'where clause'
+[Method: POST, Route: barcode/check]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk`
+WHERE `barcode` = :barcode:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Barcode.php(27): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barcode->check()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barcode))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 12:26:19 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'barcode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `produk`
+WHERE `barcode` = \'PRD-20251020-060ED9\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `produk`
+WHERE `barcode` = \'PRD-20251020-060ED9\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk`
+WHERE `barcode` = :barcode:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Barcode.php(27): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barcode->check()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barcode))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 12:26:19 --> [Caused by] mysqli_sql_exception: Unknown column 'barcode' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `produk`
+WHERE `barcode` = \'PRD-20251020-060ED9\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `produk`
+WHERE `barcode` = \'PRD-20251020-060ED9\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `produk`
+WHERE `barcode` = \'PRD-20251020-060ED9\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `produk`
+WHERE `barcode` = :barcode:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Barcode.php(27): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barcode->check()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barcode))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 12:30:07 --> ErrorException: Undefined property: App\Controllers\Barcode::$produkModel
+[Method: POST, Route: barcode/check]
+in APPPATH\Controllers\Barcode.php on line 25.
+ 1 APPPATH\Controllers\Barcode.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Barcode::$produkModel', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Barcode.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barcode->check()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barcode))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-21 12:30:35 --> ErrorException: Undefined property: App\Controllers\Barcode::$M_produk
+[Method: POST, Route: barcode/check]
+in APPPATH\Controllers\Barcode.php on line 25.
+ 1 APPPATH\Controllers\Barcode.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Barcode::$M_produk', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Barcode.php', 25)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Barcode->check()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Barcode))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')

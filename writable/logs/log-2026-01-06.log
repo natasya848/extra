@@ -1,0 +1,951 @@
+CRITICAL - 2026-01-06 07:42:58 --> Error: Class "App\Models\Universal\Menu_M" not found
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 16.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\ekstra->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 07:43:25 --> Error: Class "App\Controllers\Menu_M" not found
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Ekstra->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 13:56:12 --> Error: Class "App\Models\M_model" not found
+[Method: GET, Route: kelas]
+in APPPATH\Controllers\Ruangan.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ruangan->kelas()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 13:56:52 --> ErrorException: Undefined variable $a
+[Method: GET, Route: kelas]
+in APPPATH\Views\ruangan\table_kelas.php on line 42.
+ 1 APPPATH\Views\ruangan\table_kelas.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $a', 'C:\\Users\\User\\Music\\ekstra\\app\\Views\\ruangan\\table_kelas.php', 42)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\ekstra\\app\\Views\\ruangan\\table_kelas.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ruangan/table_kelas', [], true)
+ 5 APPPATH\Controllers\Ruangan.php(20): view('ruangan/table_kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ruangan->kelas()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 13:58:28 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ruangan/tabel_jurusan.php"
+[Method: GET, Route: jurusan]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ruangan/tabel_jurusan.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ruangan/tabel_jurusan', [], true)
+ 3 APPPATH\Controllers\Ruangan.php(35): view('ruangan/tabel_jurusan', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ruangan->jurusan()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 13:59:11 --> mysqli_sql_exception: Table 'ekstra.jenjang' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Ruangan.php(52): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Ruangan->rombel()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-06 13:59:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jenjang' doesn't exist
+[Method: GET, Route: rombel]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC', [], false)
+ 2 APPPATH\Controllers\Ruangan.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ruangan->rombel()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 13:59:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jenjang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC', [], false)
+ 4 APPPATH\Controllers\Ruangan.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ruangan->rombel()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 13:59:11 --> [Caused by] mysqli_sql_exception: Table 'ekstra.jenjang' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rombel`
+JOIN `kelas` ON `rombel`.`kelas` = `kelas`.`id_kelas`
+JOIN `jurusan` ON `rombel`.`jurusan` = `jurusan`.`id_jurusan`
+JOIN `jenjang` ON `rombel`.`jenjang` = `jenjang`.`id_jenjang`
+ORDER BY `rombel`.`created_at` DESC', [], false)
+ 5 APPPATH\Controllers\Ruangan.php(52): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ruangan->rombel()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 14:39:25 --> Error: Cannot use object of type stdClass as array
+[Method: GET, Route: edit_kelas/16]
+in APPPATH\Views\ruangan\edit_kelas.php on line 34.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ruangan/edit_kelas', [], true)
+ 4 APPPATH\Controllers\Ruangan.php(63): view('ruangan/edit_kelas', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ruangan->edit_kelas('16')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 14:57:58 --> mysqli_sql_exception: Table 'ekstra.jabatan_guru' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\app\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Guru->index()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2026-01-06 14:57:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan_guru' doesn't exist
+[Method: GET, Route: guru]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 2 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 14:57:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan_guru' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 4 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 14:57:58 --> [Caused by] mysqli_sql_exception: Table 'ekstra.jabatan_guru' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 5 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 14:58:01 --> mysqli_sql_exception: Table 'ekstra.jabatan_guru' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\app\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Guru->index()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2026-01-06 14:58:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan_guru' doesn't exist
+[Method: GET, Route: guru]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 2 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 14:58:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan_guru' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 4 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 14:58:01 --> [Caused by] mysqli_sql_exception: Table 'ekstra.jabatan_guru' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 5 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 14:58:38 --> mysqli_sql_exception: Table 'ekstra.jabatan_guru' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\app\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Guru->index()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2026-01-06 14:58:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan_guru' doesn't exist
+[Method: GET, Route: guru]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 2 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 14:58:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan_guru' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 4 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 14:58:38 --> [Caused by] mysqli_sql_exception: Table 'ekstra.jabatan_guru' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 5 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 15:00:06 --> mysqli_sql_exception: Unknown column 'user.jenjang' in 'field list' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\app\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Guru->index()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2026-01-06 15:00:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.jenjang' in 'field list'
+[Method: GET, Route: guru]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 2 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:00:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.jenjang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 4 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:00:06 --> [Caused by] mysqli_sql_exception: Unknown column 'user.jenjang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 5 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 15:00:11 --> mysqli_sql_exception: Unknown column 'user.jenjang' in 'field list' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\app\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Guru->index()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2026-01-06 15:00:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.jenjang' in 'field list'
+[Method: GET, Route: guru]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 2 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:00:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user.jenjang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 4 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:00:11 --> [Caused by] mysqli_sql_exception: Unknown column 'user.jenjang' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `rombel`.`nama_r`, `user`.`jenjang`, `guru`.`user`, `guru`.`id_guru`, `guru`.`nik`, `guru`.`nama`, `kelas`.`nama_kelas`, `jurusan`.`nama_jurusan`, `user`.`jabatan`, `jabatan_guru`.*
+FROM `guru`
+JOIN `user` ON `user`.`id_user` = `guru`.`user`
+JOIN `rombel` ON `rombel`.`id_rombel` = `guru`.`rombel`
+JOIN `kelas` ON `kelas`.`id_kelas` = `rombel`.`kelas`
+JOIN `jurusan` ON `jurusan`.`id_jurusan` = `rombel`.`jurusan`
+JOIN `jabatan_guru` ON `jabatan_guru`.`id_jabatan` = `user`.`jabatan`
+ORDER BY `guru`.`created_at` DESC', [], false)
+ 5 APPPATH\Models\M_guru.php(58): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Guru.php(15): App\Models\M_guru->getAllRombelDetails()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:02:06 --> ErrorException: Undefined variable $user
+[Method: GET, Route: edit_guru/17]
+in APPPATH\Controllers\Guru.php on line 95.
+ 1 APPPATH\Controllers\Guru.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Guru.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 15:03:42 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\Users\User\Music\ekstra\app\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', Array)
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2026-01-06 15:03:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user' in 'where clause'
+[Method: GET, Route: edit_guru/17]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+WHERE `user` = :user:', [...], false)
+ 2 APPPATH\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:03:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+WHERE `user` = :user:', [...], false)
+ 4 APPPATH\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 APPPATH\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:03:42 --> [Caused by] mysqli_sql_exception: Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+WHERE `user` = :user:', [...], false)
+ 5 APPPATH\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-06 15:05:22 --> mysqli_sql_exception: Unknown column 'user' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\Users\User\Music\ekstra\app\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', Array)
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2026-01-06 15:05:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user' in 'where clause'
+[Method: GET, Route: edit_guru/17]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+WHERE `user` = :user:', [...], false)
+ 2 APPPATH\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:05:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+WHERE `user` = :user:', [...], false)
+ 4 APPPATH\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 APPPATH\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:05:22 --> [Caused by] mysqli_sql_exception: Unknown column 'user' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `kelas`
+WHERE `user` = \'17\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `kelas`
+WHERE `user` = :user:', [...], false)
+ 5 APPPATH\Models\M_guru.php(32): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\Guru.php(103): App\Models\M_guru->getWhere('kelas', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Guru->edit_guru('17')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:12:23 --> ErrorException: Cannot redeclare App\Controllers\Ekstra::index()
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 41.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2026-01-06 15:21:15 --> Error: Class "App\Controllers\Menu_M" not found
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Ekstra->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:22:21 --> Error: Class "App\Models\M_Ekstra" not found
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:23:33 --> Error: Class "App\Models\M_ekstra" not found
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:23:48 --> ErrorException: Undefined property: App\Controllers\Ekstra::$menuModel
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 15.
+ 1 APPPATH\Controllers\Ekstra.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ekstra::$menuModel', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Ekstra.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-06 15:23:56 --> ErrorException: Undefined property: App\Controllers\Ekstra::$menuModel
+[Method: GET, Route: ekstra]
+in APPPATH\Controllers\Ekstra.php on line 15.
+ 1 APPPATH\Controllers\Ekstra.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Ekstra::$menuModel', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Ekstra.php', 15)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')

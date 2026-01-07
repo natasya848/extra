@@ -1,0 +1,67 @@
+CRITICAL - 2025-10-07 08:34:37 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "pageuser/index.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pageuser/index.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('pageuser/index', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('pageuser/index')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-07 09:03:22 --> ErrorException: Undefined variable $kode_barcode
+[Method: GET, Route: produk/tambah/]
+in APPPATH\Views\produk\tambah_produk.php on line 46.
+ 1 APPPATH\Views\produk\tambah_produk.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barcode', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\tambah_produk.php', 46)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\tambah_produk.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('produk/tambah_produk', [], true)
+ 5 APPPATH\Controllers\Produk.php(89): view('produk/tambah_produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-07 09:04:01 --> ErrorException: Undefined variable $kode_barcode
+[Method: GET, Route: produk/tambah/]
+in APPPATH\Views\produk\tambah_produk.php on line 46.
+ 1 APPPATH\Views\produk\tambah_produk.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $kode_barcode', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\tambah_produk.php', 46)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\produk\\tambah_produk.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('produk/tambah_produk', [], true)
+ 5 APPPATH\Controllers\Produk.php(89): view('produk/tambah_produk', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->tambah()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-07 09:13:21 --> CodeIgniter\Database\Exceptions\DataException: There is no data to insert.
+[Method: POST, Route: produk/simpan]
+in SYSTEMPATH\BaseModel.php on line 829.
+ 1 SYSTEMPATH\BaseModel.php(829): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([], false)
+ 3 SYSTEMPATH\BaseModel.php(754): CodeIgniter\Model->insert([...], false)
+ 4 APPPATH\Controllers\Produk.php(124): CodeIgniter\BaseModel->save([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Produk->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Produk))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-07 09:30:40 --> Barcode error: Neither gd-lib or imagick are installed!
+ERROR - 2025-10-07 09:30:41 --> Barcode error: Neither gd-lib or imagick are installed!
+ERROR - 2025-10-07 09:33:23 --> Barcode error: Neither gd-lib or imagick are installed!
+ERROR - 2025-10-07 09:33:55 --> Barcode error: Neither gd-lib or imagick are installed!
+ERROR - 2025-10-07 09:50:49 --> QR Code error: Call to undefined method Endroid\QrCode\QrCode::create()
+ERROR - 2025-10-07 09:50:50 --> QR Code error: Call to undefined method Endroid\QrCode\QrCode::create()
+ERROR - 2025-10-07 09:53:12 --> QR Code error: Call to undefined method Endroid\QrCode\QrCode::setSize()
+ERROR - 2025-10-07 09:53:13 --> QR Code error: Call to undefined method Endroid\QrCode\QrCode::setSize()
+ERROR - 2025-10-07 10:00:53 --> QR Code error: Call to undefined method Endroid\QrCode\QrCode::setText()
+ERROR - 2025-10-07 10:00:54 --> QR Code error: Call to undefined method Endroid\QrCode\QrCode::setText()

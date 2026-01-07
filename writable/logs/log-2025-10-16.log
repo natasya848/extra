@@ -1,0 +1,1162 @@
+ERROR - 2025-10-16 02:05:43 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'kasir_fotocopy', 3306, '', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\User\Music\kasir\app\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\User->index()
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\User\Music\kasir\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\User\Music\kasir\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\User\Music\kasir\app\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\User->index()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-16 02:05:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: user]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\User.php(19): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 02:07:06 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 02:07:08 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/addCartDetail]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/addCartDetail', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 02:21:52 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeFromCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeFromCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 02:21:54 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeFromCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeFromCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 02:21:54 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeFromCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeFromCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 02:21:54 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: kasir/removeFromCart]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('kasir/removeFromCart', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 03:50:57 --> Error: Class "App\Models\M_booking" not found
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 03:51:03 --> Error: Class "App\Models\M_booking" not found
+[Method: GET, Route: admin/health-data]
+in APPPATH\Controllers\Admin.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 04:34:27 --> Error: Class "App\Models\M_booking" not found
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 04:37:54 --> mysqli_sql_exception: Table 'kasir_fotocopy.akun' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+#6 C:\Users\User\Music\kasir\app\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Laporan->index()
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2025-10-16 04:37:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.akun' doesn't exist
+[Method: GET, Route: laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= :p.tanggal:
+AND `p`.`tanggal` <= :p.tanggal.1:
+ORDER BY `p`.`tanggal` DESC', [...], false)
+ 2 APPPATH\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+ 4 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 04:37:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.akun' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= :p.tanggal:
+AND `p`.`tanggal` <= :p.tanggal.1:
+ORDER BY `p`.`tanggal` DESC', [...], false)
+ 4 APPPATH\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+ 6 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 04:37:54 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.akun' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= :p.tanggal:
+AND `p`.`tanggal` <= :p.tanggal.1:
+ORDER BY `p`.`tanggal` DESC', [...], false)
+ 5 APPPATH\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+ 7 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 04:49:48 --> mysqli_sql_exception: Unknown column 'p.id_akun' in 'on clause' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+#6 C:\Users\User\Music\kasir\app\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Laporan->index()
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2025-10-16 04:49:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id_akun' in 'on clause'
+[Method: GET, Route: laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= :p.tanggal:
+AND `p`.`tanggal` <= :p.tanggal.1:
+ORDER BY `p`.`tanggal` DESC', [...], false)
+ 2 APPPATH\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+ 4 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 04:49:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'p.id_akun' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= :p.tanggal:
+AND `p`.`tanggal` <= :p.tanggal.1:
+ORDER BY `p`.`tanggal` DESC', [...], false)
+ 4 APPPATH\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+ 6 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 04:49:48 --> [Caused by] mysqli_sql_exception: Unknown column 'p.id_akun' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= \'2025-10-01\'
+AND `p`.`tanggal` <= \'2025-10-31\'
+ORDER BY `p`.`tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `p`.*, `u`.`nama` as `nama_user`, `a`.`nama_akun`
+FROM `pengeluaran` `p`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `p`.`id_user`
+LEFT JOIN `akun_keuangan` `a` ON `a`.`id_akun` = `p`.`id_akun`
+WHERE `p`.`tanggal` >= :p.tanggal:
+AND `p`.`tanggal` <= :p.tanggal.1:
+ORDER BY `p`.`tanggal` DESC', [...], false)
+ 5 APPPATH\Models\M_pengeluaran.php(50): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_transaksi_penjualan.php(182): App\Models\M_pengeluaran->getPengeluaranWithUser('2025-10-01', '2025-10-31')
+ 7 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 06:34:26 --> mysqli_sql_exception: Table 'kasir_fotocopy.akun_keuangans' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `j`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `j`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `j`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_jurnal.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+#6 C:\Users\User\Music\kasir\app\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Laporan->index()
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2025-10-16 06:34:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.akun_keuangans' doesn't exist
+[Method: GET, Route: laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= :j.tanggal:
+AND `j`.`tanggal` <= :j.tanggal.1:
+ORDER BY `j`.`tanggal` DESC', [...], false)
+ 2 APPPATH\Models\M_jurnal.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+ 4 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:34:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.akun_keuangans' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= :j.tanggal:
+AND `j`.`tanggal` <= :j.tanggal.1:
+ORDER BY `j`.`tanggal` DESC', [...], false)
+ 4 APPPATH\Models\M_jurnal.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+ 6 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:34:26 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.akun_keuangans' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM `jurnal` `j`
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangans` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= :j.tanggal:
+AND `j`.`tanggal` <= :j.tanggal.1:
+ORDER BY `j`.`tanggal` DESC', [...], false)
+ 5 APPPATH\Models\M_jurnal.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+ 7 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 06:37:07 --> mysqli_sql_exception: Unknown column 'j.id_akun_debit' in 'on clause' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `j`.*, `...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `j`.*, `...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `j`.*, `...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(928): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Models\M_jurnal.php(53): CodeIgniter\Model->__call('get', Array)
+#6 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+#7 C:\Users\User\Music\kasir\app\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Laporan->index()
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#10 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#15 {main}
+CRITICAL - 2025-10-16 06:37:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'j.id_akun_debit' in 'on clause'
+[Method: GET, Route: laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= :j.tanggal:
+AND `j`.`tanggal` <= :j.tanggal.1:
+ORDER BY `j`.`tanggal` DESC', [...], false)
+ 2 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Models\M_jurnal.php(53): CodeIgniter\Model->__call('get', [])
+ 4 APPPATH\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+ 5 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:37:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'j.id_akun_debit' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= :j.tanggal:
+AND `j`.`tanggal` <= :j.tanggal.1:
+ORDER BY `j`.`tanggal` DESC', [...], false)
+ 4 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Models\M_jurnal.php(53): CodeIgniter\Model->__call('get', [])
+ 6 APPPATH\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+ 7 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:37:07 --> [Caused by] mysqli_sql_exception: Unknown column 'j.id_akun_debit' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= \'2025-10-01\'
+AND `j`.`tanggal` <= \'2025-10-31\'
+ORDER BY `j`.`tanggal` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `j`.*, `ad`.`nama_akun` as `akun_debit`, `ak`.`nama_akun` as `akun_kredit`
+FROM (`jurnal`, `jurnal` `j`)
+LEFT JOIN `akun_keuangan` `ad` ON `ad`.`id_akun` = `j`.`id_akun_debit`
+LEFT JOIN `akun_keuangan` `ak` ON `ak`.`id_akun` = `j`.`id_akun_kredit`
+WHERE `j`.`tanggal` >= :j.tanggal:
+AND `j`.`tanggal` <= :j.tanggal.1:
+ORDER BY `j`.`tanggal` DESC', [...], false)
+ 5 SYSTEMPATH\Model.php(928): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Models\M_jurnal.php(53): CodeIgniter\Model->__call('get', [])
+ 7 APPPATH\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+ 8 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:39:31 --> ErrorException: Undefined variable $tanggal_mulai
+[Method: GET, Route: laporan]
+in APPPATH\Models\M_jurnal.php on line 50.
+ 1 APPPATH\Models\M_jurnal.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tanggal_mulai', 'C:\\Users\\User\\Music\\kasir\\app\\Models\\M_jurnal.php', 50)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(185): App\Models\M_jurnal->getJurnalWithAkun('2025-10-01', '2025-10-31')
+ 3 APPPATH\Controllers\Laporan.php(35): App\Models\M_transaksi_penjualan->getLaporanKeuangan('2025-10-01', '2025-10-31')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:43:10 --> ErrorException: Undefined variable $report_type
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\keuangan.php on line 25.
+ 1 APPPATH\Views\laporan\keuangan.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $report_type', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php', 25)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/keuangan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(42): view('laporan/keuangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:46:54 --> ErrorException: Undefined variable $sales_data
+[Method: GET, Route: laporan]
+in APPPATH\Views\laporan\keuangan.php on line 67.
+ 1 APPPATH\Views\laporan\keuangan.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sales_data', 'C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\kasir\\app\\Views\\laporan\\keuangan.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/keuangan', [], true)
+ 5 APPPATH\Controllers\Laporan.php(44): view('laporan/keuangan', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 06:51:01 --> mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, ...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, ...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, ...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, ...', Array, false)
+#4 C:\Users\User\Music\kasir\app\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\app\Controllers\Laporan.php(41): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+#6 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Laporan->index()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#13 {main}
+CRITICAL - 2025-10-16 06:51:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+[Method: GET, Route: laporan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 2 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Laporan.php(41): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:51:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 4 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Laporan.php(41): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:51:01 --> [Caused by] mysqli_sql_exception: Table 'kasir_fotocopy.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_user`
+FROM `transaksi_penjualan` `tp`
+LEFT JOIN `user` `u` ON `u`.`id_user` = `tp`.`id_user`', [], false)
+ 5 APPPATH\Models\M_transaksi_penjualan.php(53): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Laporan.php(41): App\Models\M_transaksi_penjualan->getTransaksiWithUser()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 06:53:19 --> Error: Call to a member function where() on array
+[Method: GET, Route: laporan]
+in APPPATH\Controllers\Laporan.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 07:19:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/keuangan_pdf.php"
+[Method: GET, Route: laporan/exportPDF]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/keuangan_pdf.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/keuangan_pdf', [], true)
+ 3 APPPATH\Controllers\Laporan.php(114): view('laporan/keuangan_pdf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 07:19:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "laporan/keuangan_pdf.php"
+[Method: GET, Route: laporan/exportPDF]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan/keuangan_pdf.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('laporan/keuangan_pdf', [], true)
+ 3 APPPATH\Controllers\Laporan.php(114): view('laporan/keuangan_pdf', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportPDF()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 07:29:29 --> Error: Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+[Method: GET, Route: laporan/exportExcel]
+in APPPATH\Controllers\Laporan.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 07:31:00 --> Error: Class "PhpOffice\PhpSpreadsheet\Spreadsheet" not found
+[Method: GET, Route: laporan/exportExcel]
+in APPPATH\Controllers\Laporan.php on line 144.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportExcel()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 07:32:27 --> ErrorException: Undefined array key "total"
+[Method: GET, Route: laporan/exportExcel]
+in APPPATH\Controllers\Laporan.php on line 169.
+ 1 APPPATH\Controllers\Laporan.php(169): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "total"', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Laporan.php', 169)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Laporan->exportExcel()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Laporan))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 07:47:36 --> Error: Class "App\Models\M_booking" not found
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 07:56:50 --> Error: Class "App\Models\M_booking" not found
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Admin->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 08:00:37 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\Users\User\Music\kasir\app\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+#7 C:\Users\User\Music\kasir\app\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Admin->index()
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#15 {main}
+CRITICAL - 2025-10-16 08:00:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:00:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:00:37 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 08:04:12 --> mysqli_sql_exception: Unknown column 'nominal' in 'field list' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nom...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nom...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nom...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nom...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\Users\User\Music\kasir\app\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+#7 C:\Users\User\Music\kasir\app\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Admin->index()
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#10 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#15 {main}
+CRITICAL - 2025-10-16 08:04:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:04:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:04:12 --> [Caused by] mysqli_sql_exception: Unknown column 'nominal' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= \'2025-10-01\'
+AND `tanggal` <= \'2025-10-31\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT SUM(`nominal`) AS `nominal`
+FROM `pengeluaran`
+WHERE `tanggal` >= :tanggal:
+AND `tanggal` <= :tanggal.1:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\M_pengeluaran.php(32): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\Admin.php(24): App\Models\M_pengeluaran->getTotalPengeluaranByDateRange('2025-10-01', '2025-10-31')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:11:20 --> TypeError: Unsupported operand types: string - array
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 25.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:15:34 --> ErrorException: Undefined property: App\Controllers\Admin::$db
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 38.
+ 1 APPPATH\Controllers\Admin.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$db', 'C:\\Users\\User\\Music\\kasir\\app\\Controllers\\Admin.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:17:18 --> TypeError: Unsupported operand types: string - array
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+ERROR - 2025-10-16 08:29:48 --> mysqli_sql_exception: Unknown table 'kasir_fotocopy.tp' in C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\kasir\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, ...', 0)
+#1 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, ...')
+#2 C:\Users\User\Music\kasir\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, ...')
+#3 C:\Users\User\Music\kasir\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, ...', Array, false)
+#4 C:\Users\User\Music\kasir\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\kasir\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\User\Music\kasir\app\Controllers\Admin.php(65): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\User\Music\kasir\system\CodeIgniter.php(933): App\Controllers\Admin->index()
+#8 C:\Users\User\Music\kasir\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\Users\User\Music\kasir\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\kasir\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\kasir\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\kasir\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\kasir\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2025-10-16 08:29:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'kasir_fotocopy.tp'
+[Method: GET, Route: admin]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = :tp.status:
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(65): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:29:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown table 'kasir_fotocopy.tp'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = \'Selesai\'
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = \'Selesai\'
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = :tp.status:
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Admin.php(65): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:29:49 --> [Caused by] mysqli_sql_exception: Unknown table 'kasir_fotocopy.tp'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = \'Selesai\'
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = \'Selesai\'
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = \'Selesai\'
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `tp`.*, `u`.`nama` as `nama_kasir`
+FROM `transaksi_penjualan`
+LEFT JOIN `users` `u` ON `u`.`id_user` = `tp`.`id_user`
+WHERE `tp`.`status` = :tp.status:
+ORDER BY `tp`.`tanggal` DESC
+ LIMIT 10', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(65): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 08:48:50 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: produk/getHarga]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('produk/getHarga', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
+CRITICAL - 2025-10-16 09:06:56 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: produk/getHarga]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('produk/getHarga', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\kasir\\public\\index.php')
