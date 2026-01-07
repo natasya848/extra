@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="<?= csrf_hash() ?>">
     <link rel="icon" type="image/png" href="<?= base_url('assets2/img/kasir.png') ?>">
-    <title>To Do List</title>
+    <title>SPH Ekstrakurikuler</title>
     
     <link rel="stylesheet" href="<?=base_url('assets2/compiled/css/app.css')?>" />
     <link rel="stylesheet" href="<?=base_url('assets2/compiled/css/app-dark.css')?>" />

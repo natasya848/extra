@@ -13,7 +13,7 @@ class M_user extends Model
     protected $useSoftDeletes   = false; 
 
     protected $allowedFields    = [
-        'nama', 'email', 'password', 'role', 'created_at'];
+        'username', 'email', 'password', 'level', 'foto'];
 
     protected $useTimestamps = false; 
     protected $createdField  = 'created_at';

@@ -3,7 +3,7 @@
 <div id="app">
     <?php
     $uri  = service('uri')->getSegment(1);
-    $role = session()->get('role'); 
+    $level = session()->get('level'); 
     ?>
 
     <div id="sidebar">
@@ -12,11 +12,11 @@
             <div class="sidebar-header position-relative d-flex justify-content-between align-items-center px-3 py-3 bg-primary">
                 <div class="d-flex align-items-center">
                     <!-- <img src="<?= base_url('assets2/img/kasir.png') ?>" alt="Kasir Logo" width="28" height="28" class="me-2"> -->
-                    <h5 class="mb-0 text-white fw-bold">To Do List</h5>
+                    <h5 class="mb-0 text-white fw-bold">SPH Ekstrakurikuler</h5>
                 </div>
 
                 <div class="theme-toggle d-flex gap-2 align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" level="img"
                         class="iconify iconify--system-uicons" width="20" height="20"
                         preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21">
                         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round"
@@ -35,7 +35,7 @@
                         <input class="form-check-input me-0" type="checkbox" id="toggle-dark" style="cursor: pointer">
                         <label class="form-check-label"></label>
                     </div>
-                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" level="img"
                         class="iconify iconify--mdi" width="20" height="20" viewBox="0 0 24 24">
                         <path fill="currentColor"
                             d="m17.75 4.09l-2.53 1.94l.91 3.06l-2.63-1.81l-2.63 1.81l.91-3.06l-2.53-1.94L12.44 4l1.06-3l1.06 3l3.19.09m3.5 6.91l-1.64 1.25l.59 1.98l-1.7-1.17l-1.7 1.17l.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95l2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85c-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14c.4-.4.82-.76 1.27-1.08c.75-.53 1.93.36 1.85 1.19c-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82c-2.81 3.14-2.7 7.96.31 10.98c3.02 3.01 7.84 3.12 10.98.31Z">
@@ -49,12 +49,12 @@
 
                     <li class="sidebar-item <?= ($uri == '' || $uri == 'home') ? 'active' : '' ?>">
                         <a href="<?= base_url('home') ?>" class='sidebar-link'>
-                            <i class="bi bi-speedometer2"></i> 
+                            <i class="bi bi-speedometer2"></i>
                             <span>Dashboard</span>
                         </a>
                     </li>
 
-                    <?php if ($role == 'admin'): ?>
+                    <?php if ($level == '1'): ?>
                         <li class="sidebar-title">Data Master</li>
 
                         <li class="sidebar-item <?= ($uri == 'user') ? 'active' : '' ?>">
@@ -66,46 +66,100 @@
 
                         <li class="sidebar-item <?= ($uri == 'kelas') ? 'active' : '' ?>">
                             <a href="<?= base_url('kelas') ?>" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i> 
+                                <i class="bi bi-building"></i> 
                                 <span>Data Kelas</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item <?= ($uri == 'jurusan') ? 'active' : '' ?>">
                             <a href="<?= base_url('jurusan') ?>" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i> 
+                                <i class="bi bi-book"></i> 
                                 <span>Data Jurusan</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item <?= ($uri == 'rombel') ? 'active' : '' ?>">
                             <a href="<?= base_url('rombel') ?>" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i> 
+                                <i class="bi bi-diagram-3"></i> 
                                 <span>Data Rombel</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item <?= ($uri == 'guru') ? 'active' : '' ?>">
                             <a href="<?= base_url('guru') ?>" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i> 
+                                <i class="bi bi-person-badge"></i> 
                                 <span>Data Guru</span>
                             </a>
                         </li>
 
                         <li class="sidebar-item <?= ($uri == 'siswa') ? 'active' : '' ?>">
                             <a href="<?= base_url('siswa') ?>" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i> 
+                                <i class="bi bi-person-lines-fill"></i> 
                                 <span>Data Siswa</span>
                             </a>
                         </li>
+
+                        <li class="sidebar-title">Data Ekskul</li>
+
+                            <li class="sidebar-item <?= ($uri == 'ekstra') ? 'active' : '' ?>">
+                                <a href="<?= base_url('ekstra') ?>" class='sidebar-link'>
+                                    <i class="bi bi-list-check"></i> 
+                                    <span>Ekstra</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-item <?= ($uri == 'pilih_rombel') ? 'active' : '' ?>">
+                                <a href="<?= base_url('pilih_rombel') ?>" class='sidebar-link'>
+                                    <i class="bi bi-journal-check"></i> 
+                                    <span>Nilai Ekstrakulikuler</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-item <?= ($uri == 'absensi') ? 'active' : '' ?>">
+                                <a href="<?= base_url('absensi') ?>" class='sidebar-link'>
+                                    <i class="bi bi-calendar-check"></i> 
+                                    <span>Absensi</span>
+                                </a>
+                            </li>
                     <?php endif; ?>
 
-                    <li class="sidebar-item <?= ($uri == 'ekstra') ? 'active' : '' ?>">
-                        <a href="<?= base_url('ekstra') ?>" class='sidebar-link'>
-                            <i class="bi bi-list-check"></i> 
-                            <span>Ekstra</span>
-                        </a>
-                    </li>
+                    <?php if (in_array($level, ['2','3','4'])): ?>
+                        
+                        <?php if (in_array($level, ['2','3'])): ?>
+                            <li class="sidebar-item <?= ($uri == 'ekstra') ? 'active' : '' ?>">
+                                <a href="<?= base_url('ekstra') ?>" class='sidebar-link'>
+                                    <i class="bi bi-list-check"></i> 
+                                    <span>Ekstra</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if (in_array($level, ['2','3','4'])): ?>
+                            <li class="sidebar-item <?= ($uri == 'pilih_rombel') ? 'active' : '' ?>">
+                                <a href="<?= base_url('pilih_rombel') ?>" class='sidebar-link'>
+                                    <i class="bi bi-journal-check"></i> 
+                                    <span>Nilai Ekstrakulikuler</span>
+                                </a>
+                            </li>
+
+                            <li class="sidebar-item <?= ($uri == 'absensi') ? 'active' : '' ?>">
+                                <a href="<?= base_url('absensi') ?>" class='sidebar-link'>
+                                    <i class="bi bi-calendar-check"></i> 
+                                    <span>Absensi</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+
+                        <?php if (in_array($level, ['3','4'])): ?>
+                            <li class="sidebar-item <?= ($uri == 'daftar') ? 'active' : '' ?>">
+                                <a href="<?= base_url('daftar') ?>" class='sidebar-link'>
+                                    <i class="bi bi-pencil-square"></i> 
+                                    <span>Pendaftaran Ekskul</span>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+
+                    <?php endif; ?>
 
                     <li class="sidebar-item <?= ($uri == 'logout') ? 'active' : '' ?>">
                         <a href="<?= base_url('logout') ?>" class='sidebar-link'>

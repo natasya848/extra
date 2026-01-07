@@ -1,38 +1,5 @@
+<input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
 
-<style>
-	.legend-dot {
-		display: inline-block;
-		height: 12px;
-		width: 12px;
-		border-radius: 50%;
-		margin-right: 6px;
-	}
-	.legend-item {
-		margin-right: 20px;
-		display: inline-flex;
-		align-items: center;
-		font-size: 14px;
-	}
-	.tr-ketua,
-	.tr-ketua * {
-		background-color: #6ECB63 !important;
-		color: #000 !important;
-	}
-
-	.tr-sekretaris,
-	.tr-sekretaris * {
-		background-color: #FFD966 !important;
-		color: #000 !important;
-	}
-
-	.table-warning * {
-		color: #000 !important;
-	}
-	.table-success * {
-		color: #000 !important;
-	}
-
-</style>
 
 <div id="main-content">
 	<div class="page-heading">
@@ -72,50 +39,19 @@
 				<div class="card-header">
 				</div>
 				<div class="card-body">
-					<div class="mb-3">
-						<div class="legend-item"><span class="legend-dot" style="background-color:#6ECB63;"></span> Ketua Kelas</div>
-						<div class="legend-item"><span class="legend-dot" style="background-color:#FFD966;"></span> Sekretaris</div>
-					</div>
-					<div class="row mb-3">
-						<div class="col-md-6">
-							<label for="selectKetua" class="form-label fw-bold">Pilih Ketua Kelas</label>
-							<select id="selectKetua" class="form-select" data-role="Ketua Kelas">
-								<option value="">-- Pilih Ketua Kelas --</option>
-								<?php foreach ($siswa as $s): ?>
-									<option value="<?= $s->id_siswa ?>" <?= $s->nama_jabatan == 'Ketua Kelas' ? 'selected' : '' ?>>
-										<?= $s->nama_siswa ?>
-									</option>
-								<?php endforeach; ?>
-							</select>
-						</div>
-						<div class="col-md-6">
-							<label for="selectSekretaris" class="form-label fw-bold">Pilih Sekretaris</label>
-							<select id="selectSekretaris" class="form-select" data-role="Sekretaris">
-								<option value="">-- Pilih Sekretaris --</option>
-								<?php foreach ($siswa as $s): ?>
-									<option value="<?= $s->id_siswa ?>" <?= $s->nama_jabatan == 'Sekretaris' ? 'selected' : '' ?>>
-										<?= $s->nama_siswa ?>
-									</option>
-								<?php endforeach; ?>
-							</select>
-						</div>
-					</div>
-
 					<div class="mb-3 d-flex flex-wrap gap-2">
-						<ul class="nav nav-tabs mb-3 ms-4" style="--bs-nav-tabs-link-active-bg: #AEE2FF;">
-							<?php for ($i = 1; $i <= 8; $i++): ?>
+						<ul class="nav nav-tabs">
+							<?php for ($i = 1; $i <= 2; $i++): ?>
 								<li class="nav-item">
-									<a class="nav-link <?= ($id_blok == $i) ? 'active' : '' ?>" 
-									href="<?= base_url('nilai_siswa/nilai_kelas/' . $id_rombel . '/' . $i) ?>"
-									style="<?= ($id_blok == $i) ? 'background-color:#AEE2FF; color:#000;' : 'color:#555;' ?>">
-										Blok <?= $i ?>
+									<a class="nav-link <?= ($id_semester == $i) ? 'active' : '' ?>"
+									href="<?= base_url('nilai_perkelas/' . $id_rombel . '/' . $i) ?>">
+										Semester <?= $i ?>
 									</a>
 								</li>
 							<?php endfor; ?>
 						</ul>
 					</div>
 
-					
 							<div class="table-responsive">
 								<table class="table table-striped" id="table9">
 									<thead>
@@ -133,7 +69,7 @@
 									</thead>
 									<tbody>
 										<?php $no = 1; foreach ($siswa as $s): ?>
-											<tr class="<?= $s->nama_jabatan == 'Ketua Kelas' ? 'tr-ketua' : ($s->nama_jabatan == 'Sekretaris' ? 'tr-sekretaris' : '') ?>">
+											<tr>
 												<td><?= $no++ ?></td>
 												<td>
 													<?= $s->nis ?>
@@ -188,6 +124,7 @@
 														<div class="modal fade" id="modalEkstra<?= $s->id_siswa ?>" tabindex="-1" aria-labelledby="labelEkstra<?= $s->id_siswa ?>" aria-hidden="true">
 															<div class="modal-dialog">
 																<form class="form-ekstra" method="post" id="formEkstra<?= $s->id_siswa ?>">
+																	<?= csrf_field() ?>
 																	<div class="modal-content">
 																		<div class="modal-header">
 																			<h5 class="modal-title">Input Nilai Ekstrakurikuler - <?= $s->nama_siswa ?></h5>
@@ -196,12 +133,12 @@
 																		<div class="modal-body">
 																			<input type="hidden" name="id_siswa" value="<?= $s->id_siswa ?>">
 																			<input type="hidden" name="id_tahun" value="<?= $id_tahun ?>">
-																			<input type="hidden" name="id_blok" value="<?= $id_blok ?>">
+																			<input type="hidden" name="id_semester" value="<?= $id_semester ?>">
 																			<input type="hidden" name="input_by" value="<?= session()->get('id') ?>">
 
 																		<div class="mb-3">
 																			<label class="form-label">Semester</label>
-																			<input type="text" class="form-control" value="Semester <?= ($id_blok <= 4) ? 1 : 2 ?>" readonly>
+																			<input type="text" class="form-control" value="<?= $semesterAktif->nama_s ?? 'Semester' ?>" readonly>
 																		</div>
 
 																		<div class="mb-3">
@@ -385,7 +322,9 @@
 									</td>
 									<td><?= htmlspecialchars($e->keterangan) ?></td>
 									<td>
-										<form method="post" action="/nilai_siswa/hapus" onsubmit="return confirm('Yakin ingin menghapus nilai ini?');">
+										<form method="post" action="<?= base_url('hapus') ?>" 
+											onsubmit="return confirm('Yakin ingin menghapus nilai ini?');">
+											<?= csrf_field() ?>
 											<input type="hidden" name="id" value="<?= $e->id ?>">
 											<button type="submit" class="btn btn-sm btn-danger ms-2">Hapus</button>
 										</form>
@@ -428,12 +367,14 @@
 		$status.html('<i class="fa fa-spinner fa-spin fa-2x text-warning"></i>');
 
 		$.ajax({
-		url: '<?= base_url('nilai_siswa/update_sikap') ?>',
+		url: '<?= base_url('update_sikap') ?>',
 		method: 'POST',
 		data: {
 			nis: nis,
 			field: field,
-			value: value
+			value: value,
+			<?= csrf_token() ?>: "<?= csrf_hash() ?>"
+
 		},
 		success: function (res) {
 			$status.html('<i class="fa fa-check fa-2x text-success"></i>');
@@ -468,7 +409,7 @@
 		const formData = form.serialize();
 
 		$.ajax({
-			url: '<?= base_url('nilai_siswa/simpan_ekstra') ?>', 
+			url: '<?= base_url('simpan_ekstra') ?>', 
 			method: 'POST',
 			data: formData,
 			dataType: 'json',
@@ -497,19 +438,16 @@
 		const nama_jabatan = $(this).data('role');
 
 		$.ajax({
-			url: '<?= base_url('nilai_siswa/update_jabatan') ?>',
-			type: 'POST',
+			url: "<?= base_url('nilai_siswa/update_jabatan') ?>",
+			type: "POST",
 			data: {
 				id_siswa: id_siswa,
 				nama_jabatan: nama_jabatan,
-				id_rombel: <?= $id_rombel ?>
+				id_rombel: id_rombel,
+				<?= csrf_token() ?>: "<?= csrf_hash() ?>"
 			},
-			success: function (response) {
-				console.log('Jabatan diperbarui:', response);
-				location.reload(); 
-			},
-			error: function () {
-				alert('Gagal mengupdate jabatan.');
+			success: function (res) {
+				console.log(res);
 			}
 		});
 	});

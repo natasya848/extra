@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'Login::index');
 $routes->get('home', 'Home::index');
 $routes->get('home/user', 'Home::user');
 $routes->get('profile', 'Home::profile');
@@ -49,17 +49,32 @@ $routes->post('/aksi_tambah_ekstra', 'Ekstra::aksi_tambah_ekstra');
 $routes->get('/edit_ekstra/(:num)', 'Ekstra::edit_ekstra/$1');
 $routes->post('/aksi_edit_ekstra/(:num)', 'Ekstra::aksi_edit_ekstra/$1');
 $routes->get('/delete_ekstra/(:num)', 'Ekstra::delete_ekstra/$1');
+$routes->get('/siswa', 'Siswa::index');
+$routes->get('/tambah_siswa', 'siswa::tambah_siswa');
+$routes->post('/aksi_tambah_siswa', 'siswa::aksi_tambah_siswa');
+$routes->get('/edit_siswa/(:num)', 'siswa::edit_siswa/$1');
+$routes->post('/aksi_edit_siswa', 'Siswa::aksi_edit_siswa');
+$routes->get('/delete_siswa/(:num)', 'siswa::delete_siswa/$1');
+
+$routes->get('/pilih_rombel', 'Nilai_siswa::pilih_rombel');
+$routes->get('nilai_perkelas/(:num)/(:num)', 'Nilai_siswa::nilai_kelas/$1/$2');
+$routes->get('/nilai_saya', 'Nilai_siswa::nilai_saya');
+$routes->post('update_jabatan', 'Nilai_siswa::update_jabatan');
+$routes->post('simpan_nilai', 'Nilai_siswa::simpan_nilai');
+$routes->post('update_sikap', 'Nilai_siswa::update_sikap');
+$routes->post('simpan_ekstra', 'Nilai_siswa::simpan_ekstra');
+$routes->post('hapus', 'Nilai_siswa::hapus');
 
 
+$routes->get('absensi', 'Absensi::index');
+$routes->post('simpan', 'Absensi::simpan');
+$routes->get('get_status_by_date', 'Absensi::get_status_by_date');
 
-$routes->get('/ekstra', 'ekstra::index');
-$routes->get('/task/edit/(:num)', 'task::edit/$1');
-$routes->post('/task/update/(:num)', 'task::update/$1');
-$routes->get('/task/tambah', 'task::tambah');
-$routes->post('/task/simpan', 'task::simpan');
-$routes->get('/task/selesai/(:num)', 'task::selesai/$1');
-$routes->get('/task/hapus/(:num)', 'task::hapus/$1');
-$routes->get('/task/detail/(:num)', 'task::detail/$1');
+
+$routes->get('daftar', 'Ekstra::daftar');
+$routes->post('simpan', 'Ekstra::simpanDaftar');
+
+
 
 $routes->get('/logout', 'Logout::index');
 $routes->get('/register', 'Register::index');

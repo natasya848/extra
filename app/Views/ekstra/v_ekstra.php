@@ -34,7 +34,7 @@
 		<section class="section">
 			<div class="card">
 				<div class="card-header">
-                    <a href="<?=base_url('/ekstra/tambah_ekstra/')?>">
+                    <a href="<?=base_url('tambah_ekstra')?>">
                         <button class="btn btn-primary"><i class="fa-solid fa-plus"></i>
                         Tambah</button>
                     </a>
@@ -76,9 +76,9 @@
 											</button>
 										</td>
                                         <td>
-                                            <a href="<?php echo base_url('ekstra/edit_ekstra/'. $e['id_ekstra'])?>" class="btn btn-warning my-1"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+                                            <a href="<?php echo base_url('edit_ekstra/'. $e['id_ekstra'])?>" class="btn btn-warning my-1"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
 
-                                            <a href="<?php echo base_url('ekstra/delete_ekstra/'. $e['id_ekstra'])?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
+                                            <a href="<?php echo base_url('delete_ekstra/'. $e['id_ekstra'])?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
                                         </td>
 									</tr>
 

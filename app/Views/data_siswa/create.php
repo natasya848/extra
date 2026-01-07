@@ -25,7 +25,8 @@
 
 		<section class="section">
 			<div class="card">
-				<form action="<?= base_url('data_siswa/aksi_tambah_siswa/') ?>" method="post" class="row g-3" enctype="multipart/form-data">
+				<form action="<?= base_url('aksi_tambah_siswa') ?>" method="post" class="row g-3" enctype="multipart/form-data">
+					<?= csrf_field() ?>
 					<div class="card-body">
 						<div class="row">
 							<div class="col-lg-6 col-md-12">

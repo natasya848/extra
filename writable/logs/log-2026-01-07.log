@@ -1,0 +1,1835 @@
+ERROR - 2026-01-07 13:46:54 --> mysqli_sql_exception: Table 'ekstra.blok' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(292): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 13:46:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.blok' doesn't exist
+[Method: GET, Route: nilai_siswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blok`', [], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(292): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 13:46:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.blok' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blok`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blok`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blok`', [], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(292): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 13:46:54 --> [Caused by] mysqli_sql_exception: Table 'ekstra.blok' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `blok`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `blok`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `blok`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `blok`', [], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(292): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 13:50:57 --> mysqli_sql_exception: Table 'ekstra.jadwal' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.`id_...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(337): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 13:50:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jadwal' doesn't exist
+[Method: GET, Route: nilai_siswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(337): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 13:50:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jadwal' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(337): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 13:50:57 --> [Caused by] mysqli_sql_exception: Table 'ekstra.jadwal' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `b`.`nama_b`, `g`.`nama`, `j`.`id_blok`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `blok` `b` ON `j`.`id_blok` = `b`.`id_blok`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(337): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 13:51:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "partial/header_datatable.php"
+[Method: GET, Route: nilai_siswa]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('partial/header_datatable.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('partial/header_datatable', [], true)
+ 3 APPPATH\Controllers\Nilai_siswa.php(339): view('partial/header_datatable', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:03:50 --> mysqli_sql_exception: Unknown column 'j.id_semester' in 'field list' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.`id_...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:03:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'j.id_semester' in 'field list'
+[Method: GET, Route: nilai_siswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:03:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'j.id_semester' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:03:50 --> [Caused by] mysqli_sql_exception: Unknown column 'j.id_semester' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:04:43 --> mysqli_sql_exception: Unknown column 'j.id_semester' in 'field list' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.`id_...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:04:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'j.id_semester' in 'field list'
+[Method: GET, Route: nilai_siswa]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:04:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'j.id_semester' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:04:43 --> [Caused by] mysqli_sql_exception: Unknown column 'j.id_semester' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `r`.`id_rombel`, `r`.`nama_r`, `k`.`nama_kelas`, `jr`.`jurusan_detail`, `jn`.`nama_jenjang`, `s`.`nama_s`, `g`.`nama`, `j`.`id_semester`
+FROM `rombel` `r`
+JOIN `jadwal` `j` ON `j`.`id_rombel` = `r`.`id_rombel`
+JOIN `semester` `s` ON `j`.`id_semester` = `s`.`id_semester`
+LEFT JOIN `kelas` `k` ON `r`.`kelas` = `k`.`id_kelas`
+LEFT JOIN `jurusan` `jr` ON `r`.`jurusan` = `jr`.`id_jurusan`
+LEFT JOIN `jenjang` `jn` ON `r`.`jenjang` = `jn`.`id_jenjang`
+LEFT JOIN `guru` `g` ON `g`.`rombel` = `r`.`id_rombel`
+GROUP BY `r`.`id_rombel`', [], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(343): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:06:10 --> ErrorException: Undefined variable $id_blok
+[Method: GET, Route: nilai_siswa]
+in APPPATH\Views\nilai_siswa\pilih_rombel.php on line 69.
+ 1 APPPATH\Views\nilai_siswa\pilih_rombel.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $id_blok', 'C:\\Users\\User\\Music\\ekstra\\app\\Views\\nilai_siswa\\pilih_rombel.php', 69)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\ekstra\\app\\Views\\nilai_siswa\\pilih_rombel.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('nilai_siswa/pilih_rombel', [], true)
+ 5 APPPATH\Controllers\Nilai_siswa.php(354): view('nilai_siswa/pilih_rombel', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->pilih_rombel()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:26:01 --> mysqli_sql_exception: Table 'ekstra.tahun' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(382): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:26:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.tahun' doesn't exist
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tahun`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(382): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:26:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.tahun' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tahun`
+WHERE `status` = \'Aktif\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tahun`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tahun`
+WHERE `status` = :status:', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(382): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:26:01 --> [Caused by] mysqli_sql_exception: Table 'ekstra.tahun' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `tahun`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tahun`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tahun`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tahun`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(382): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:27:44 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:27:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:27:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:27:44 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:28:37 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:28:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:28:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:28:37 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:29:37 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:29:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:29:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:29:37 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `semester`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `semester`
+WHERE `status` = :status:', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(386): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:30:16 --> mysqli_sql_exception: Table 'ekstra.jabatan' doesn't exist in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `siswa`....', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`....')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`....')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`....', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(396): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:30:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan' doesn't exist
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = :siswa.rombel:
+ORDER BY `nama_siswa` ASC', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(396): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:30:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'ekstra.jabatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = \'36\'
+ORDER BY `nama_siswa` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = \'36\'
+ORDER BY `nama_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = :siswa.rombel:
+ORDER BY `nama_siswa` ASC', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(396): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:30:16 --> [Caused by] mysqli_sql_exception: Table 'ekstra.jabatan' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = \'36\'
+ORDER BY `nama_siswa` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = \'36\'
+ORDER BY `nama_siswa` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = \'36\'
+ORDER BY `nama_siswa` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `siswa`.`id_siswa`, `siswa`.`nis`, `siswa`.`nama_siswa`, `jabatan`.`nama_jabatan`
+FROM `siswa`
+JOIN `user` ON `user`.`id_user` = `siswa`.`user`
+LEFT JOIN `jabatan` ON `jabatan`.`id_jabatan` = `user`.`jabatan`
+WHERE `siswa`.`rombel` = :siswa.rombel:
+ORDER BY `nama_siswa` ASC', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(396): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:31:31 --> mysqli_sql_exception: Unknown column 'id_semester' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(406): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:31:31 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_semester' in 'where clause'
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = :id_siswa:
+AND `id_tahun` = :id_tahun:
+AND `id_semester` = :id_semester:', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(406): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:31:31 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = \'123\'
+AND `id_tahun` = \'6\'
+AND `id_semester` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = \'123\'
+AND `id_tahun` = \'6\'
+AND `id_semester` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = :id_siswa:
+AND `id_tahun` = :id_tahun:
+AND `id_semester` = :id_semester:', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(406): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:31:31 --> [Caused by] mysqli_sql_exception: Unknown column 'id_semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = \'123\'
+AND `id_tahun` = \'6\'
+AND `id_semester` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = \'123\'
+AND `id_tahun` = \'6\'
+AND `id_semester` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = \'123\'
+AND `id_tahun` = \'6\'
+AND `id_semester` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_sikap`
+WHERE `id_siswa` = :id_siswa:
+AND `id_tahun` = :id_tahun:
+AND `id_semester` = :id_semester:', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(406): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:32:43 --> mysqli_sql_exception: Unknown column 'nilai_ekstra.id_semester' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `nilai_e...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_e...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_e...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_e...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:32:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nilai_ekstra.id_semester' in 'where clause'
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = :nilai_ekstra.id_siswa:
+AND `nilai_ekstra`.`id_tahun` = :nilai_ekstra.id_tahun:
+AND `nilai_ekstra`.`id_semester` = :nilai_ekstra.id_semester:', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:32:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nilai_ekstra.id_semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = :nilai_ekstra.id_siswa:
+AND `nilai_ekstra`.`id_tahun` = :nilai_ekstra.id_tahun:
+AND `nilai_ekstra`.`id_semester` = :nilai_ekstra.id_semester:', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:32:43 --> [Caused by] mysqli_sql_exception: Unknown column 'nilai_ekstra.id_semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = :nilai_ekstra.id_siswa:
+AND `nilai_ekstra`.`id_tahun` = :nilai_ekstra.id_tahun:
+AND `nilai_ekstra`.`id_semester` = :nilai_ekstra.id_semester:', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:32:53 --> mysqli_sql_exception: Unknown column 'nilai_ekstra.id_semester' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `nilai_e...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_e...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_e...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_e...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:32:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nilai_ekstra.id_semester' in 'where clause'
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = :nilai_ekstra.id_siswa:
+AND `nilai_ekstra`.`id_tahun` = :nilai_ekstra.id_tahun:
+AND `nilai_ekstra`.`id_semester` = :nilai_ekstra.id_semester:', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:32:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'nilai_ekstra.id_semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = :nilai_ekstra.id_siswa:
+AND `nilai_ekstra`.`id_tahun` = :nilai_ekstra.id_tahun:
+AND `nilai_ekstra`.`id_semester` = :nilai_ekstra.id_semester:', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:32:53 --> [Caused by] mysqli_sql_exception: Unknown column 'nilai_ekstra.id_semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = \'123\'
+AND `nilai_ekstra`.`id_tahun` = \'6\'
+AND `nilai_ekstra`.`id_semester` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `nilai_ekstra`.`id`, `ekstra`.`nama_ekstra`, `nilai_ekstra`.`nilai`, `nilai_ekstra`.`keterangan`
+FROM `nilai_ekstra`
+JOIN `ekstra` ON `ekstra`.`id_ekstra` = `nilai_ekstra`.`id_ekstra`
+WHERE `nilai_ekstra`.`id_siswa` = :nilai_ekstra.id_siswa:
+AND `nilai_ekstra`.`id_tahun` = :nilai_ekstra.id_tahun:
+AND `nilai_ekstra`.`id_semester` = :nilai_ekstra.id_semester:', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(420): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 14:33:53 --> mysqli_sql_exception: Unknown column 'semester' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `status`...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `status`...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `status`...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `status`...', Array, false)
+#4 C:\Users\User\Music\ekstra\app\Controllers\Nilai_siswa.php(430): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+#6 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#12 {main}
+CRITICAL - 2026-01-07 14:33:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'semester' in 'where clause'
+[Method: GET, Route: nilai_perkelas/36]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = :siswa:
+AND `tahun` = :tahun:
+AND `semester` = :semester:
+GROUP BY `status`', [...], false)
+ 2 APPPATH\Controllers\Nilai_siswa.php(430): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:33:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = \'123\'
+AND `tahun` = \'6\'
+AND `semester` = \'2\'
+GROUP BY `status`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = \'123\'
+AND `tahun` = \'6\'
+AND `semester` = \'2\'
+GROUP BY `status`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = :siswa:
+AND `tahun` = :tahun:
+AND `semester` = :semester:
+GROUP BY `status`', [...], false)
+ 4 APPPATH\Controllers\Nilai_siswa.php(430): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:33:53 --> [Caused by] mysqli_sql_exception: Unknown column 'semester' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = \'123\'
+AND `tahun` = \'6\'
+AND `semester` = \'2\'
+GROUP BY `status`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = \'123\'
+AND `tahun` = \'6\'
+AND `semester` = \'2\'
+GROUP BY `status`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = \'123\'
+AND `tahun` = \'6\'
+AND `semester` = \'2\'
+GROUP BY `status`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `status`, COUNT(*) as total
+FROM `absen`
+WHERE `siswa` = :siswa:
+AND `tahun` = :tahun:
+AND `semester` = :semester:
+GROUP BY `status`', [...], false)
+ 5 APPPATH\Controllers\Nilai_siswa.php(430): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\nilai_siswa->nilai_kelas('36')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\nilai_siswa))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 14:47:34 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_jabatan]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_jabatan', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:15:17 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: simpan_ekstra]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('simpan_ekstra', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:15:19 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: simpan_ekstra]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('simpan_ekstra', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:22:47 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:23:59 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:24:02 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:24:03 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:24:05 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:24:07 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:24:16 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:25:46 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:32:05 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:32:09 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:32:46 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:32:58 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:35:05 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: simpan_ekstra]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('simpan_ekstra', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 15:35:46 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:00:54 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: absensi]
+in APPPATH\Controllers\Absensi.php on line 95.
+ 1 APPPATH\Controllers\Absensi.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Absensi.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:01:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: absensi]
+in APPPATH\Controllers\Absensi.php on line 95.
+ 1 APPPATH\Controllers\Absensi.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Absensi.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:01:44 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: absensi]
+in APPPATH\Controllers\Absensi.php on line 95.
+ 1 APPPATH\Controllers\Absensi.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Absensi.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:02:43 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: absensi]
+in APPPATH\Controllers\Absensi.php on line 95.
+ 1 APPPATH\Controllers\Absensi.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Absensi.php', 95)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:04:42 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: absensi]
+in APPPATH\Controllers\Absensi.php on line 109.
+ 1 APPPATH\Controllers\Absensi.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Absensi.php', 109)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:07:28 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: absensi]
+in APPPATH\Controllers\Absensi.php on line 112.
+ 1 APPPATH\Controllers\Absensi.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Absensi.php', 112)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 16:56:24 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\User\Music\ekstra\app\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+#9 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2026-01-07 16:56:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: daftar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:56:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:56:24 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 16:57:35 --> mysqli_sql_exception: Unknown column 'status' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\User\Music\ekstra\app\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+#9 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2026-01-07 16:57:35 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+[Method: GET, Route: daftar]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = :status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:57:35 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = :status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 16:57:35 --> [Caused by] mysqli_sql_exception: Unknown column 'status' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = \'Aktif\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `nilai_ekstra`
+WHERE `status` = :status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(679): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Ekstra.php(149): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 17:00:23 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "ekstra/daftar.php"
+[Method: GET, Route: daftar]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('ekstra/daftar.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('ekstra/daftar', [], true)
+ 3 APPPATH\Controllers\Ekstra.php(151): view('ekstra/daftar', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 17:00:44 --> ErrorException: Undefined variable $title
+[Method: GET, Route: daftar]
+in APPPATH\Views\siswa\daftar.php on line 6.
+ 1 APPPATH\Views\siswa\daftar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\User\\Music\\ekstra\\app\\Views\\siswa\\daftar.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\ekstra\\app\\Views\\siswa\\daftar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('siswa/daftar', [], true)
+ 5 APPPATH\Controllers\Ekstra.php(151): view('siswa/daftar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 17:01:29 --> ErrorException: Undefined variable $title
+[Method: GET, Route: daftar]
+in APPPATH\Views\siswa\daftar.php on line 6.
+ 1 APPPATH\Views\siswa\daftar.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\Users\\User\\Music\\ekstra\\app\\Views\\siswa\\daftar.php', 6)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\User\\Music\\ekstra\\app\\Views\\siswa\\daftar.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('siswa/daftar', [], true)
+ 5 APPPATH\Controllers\Ekstra.php(152): view('siswa/daftar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 17:26:38 --> ErrorException: Undefined variable $semester
+[Method: GET, Route: daftar]
+in APPPATH\Controllers\Ekstra.php on line 137.
+ 1 APPPATH\Controllers\Ekstra.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $semester', 'C:\\Users\\User\\Music\\ekstra\\app\\Controllers\\Ekstra.php', 137)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Ekstra->daftar()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ekstra))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+ERROR - 2026-01-07 17:54:44 --> mysqli_sql_exception: Unknown column 'id_siswa' in 'where clause' in C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\Users\User\Music\ekstra\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\User\Music\ekstra\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\User\Music\ekstra\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\User\Music\ekstra\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\User\Music\ekstra\system\BaseModel.php(717): CodeIgniter\Model->doFirst()
+#6 C:\Users\User\Music\ekstra\app\Controllers\Absensi.php(142): CodeIgniter\BaseModel->first()
+#7 C:\Users\User\Music\ekstra\system\CodeIgniter.php(933): App\Controllers\Absensi->simpan()
+#8 C:\Users\User\Music\ekstra\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+#9 C:\Users\User\Music\ekstra\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\User\Music\ekstra\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\User\Music\ekstra\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\User\Music\ekstra\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\User\Music\ekstra\system\rewrite.php(44): require_once('C:\\Users\\User\\M...')
+#14 {main}
+CRITICAL - 2026-01-07 17:54:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_siswa' in 'where clause'
+[Method: POST, Route: simpan]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+WHERE `id_siswa` = :id_siswa:
+AND `id_ekstra` = :id_ekstra:
+AND `tanggal` = :tanggal:
+AND `semester` = :semester:
+AND `tahun` = :tahun:
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Absensi.php(142): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->simpan()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 17:54:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_siswa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absen`
+WHERE `id_siswa` = \'121\'
+AND `id_ekstra` = \'1\'
+AND `tanggal` = \'2026-01-07\'
+AND `semester` = \'2\'
+AND `tahun` = \'6\'
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absen`
+WHERE `id_siswa` = \'121\'
+AND `id_ekstra` = \'1\'
+AND `tanggal` = \'2026-01-07\'
+AND `semester` = \'2\'
+AND `tahun` = \'6\'
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+WHERE `id_siswa` = :id_siswa:
+AND `id_ekstra` = :id_ekstra:
+AND `tanggal` = :tanggal:
+AND `semester` = :semester:
+AND `tahun` = :tahun:
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Controllers\Absensi.php(142): CodeIgniter\BaseModel->first()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->simpan()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 17:54:44 --> [Caused by] mysqli_sql_exception: Unknown column 'id_siswa' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `absen`
+WHERE `id_siswa` = \'121\'
+AND `id_ekstra` = \'1\'
+AND `tanggal` = \'2026-01-07\'
+AND `semester` = \'2\'
+AND `tahun` = \'6\'
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `absen`
+WHERE `id_siswa` = \'121\'
+AND `id_ekstra` = \'1\'
+AND `tanggal` = \'2026-01-07\'
+AND `semester` = \'2\'
+AND `tahun` = \'6\'
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `absen`
+WHERE `id_siswa` = \'121\'
+AND `id_ekstra` = \'1\'
+AND `tanggal` = \'2026-01-07\'
+AND `semester` = \'2\'
+AND `tahun` = \'6\'
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `absen`
+WHERE `id_siswa` = :id_siswa:
+AND `id_ekstra` = :id_ekstra:
+AND `tanggal` = :tanggal:
+AND `semester` = :semester:
+AND `tahun` = :tahun:
+AND `absen`.`deleted_at` IS NULL
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(717): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Controllers\Absensi.php(142): CodeIgniter\BaseModel->first()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Absensi->simpan()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Absensi))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 18:59:37 --> CodeIgniter\Security\Exceptions\SecurityException: The action you requested is not allowed.
+[Method: POST, Route: update_sikap]
+in SYSTEMPATH\Security\Security.php on line 262.
+ 1 SYSTEMPATH\Security\Security.php(262): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(52): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(241): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\Filters\Filters.php(221): CodeIgniter\Filters\Filters->runBefore([...])
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\Filters\Filters->run('update_sikap', 'before')
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')
+CRITICAL - 2026-01-07 19:21:21 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "nilai_siswa/pilih_semester.php"
+[Method: GET, Route: pilih_rombel]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('nilai_siswa/pilih_semester.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('nilai_siswa/pilih_semester', [], true)
+ 3 APPPATH\Controllers\Nilai_siswa.php(307): view('nilai_siswa/pilih_semester', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Nilai_siswa->pilih_rombel()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Nilai_siswa))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\User\\Music\\ekstra\\public\\index.php')

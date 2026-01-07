@@ -41,7 +41,8 @@
           <div class="card">
             <div class="card-content">
               <div class="card-body pt-2">
-                <form class="form-horizontal" action="<?= base_url('ekstra/aksi_edit_ekstra/' . $ekstra['id_ekstra']) ?>" method="post">
+                <form class="form-horizontal" action="<?= base_url('aksi_edit_ekstra/' . $ekstra['id_ekstra']) ?>" method="post">
+                  <?= csrf_field() ?>
                   <input type="hidden" name="id_ekstra" value="<?= $ekstra['id_ekstra'] ?>">
                   <div class="form-body">
 

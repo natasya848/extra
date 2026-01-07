@@ -35,10 +35,8 @@
 		<section class="section">
 			<div class="card">
 				<div class="card-header">
-					<a href="<?php echo base_url('data_siswa/tambah_siswa/') ?>"><button class="btn btn-primary mt-2"><i class="fa-solid fa-plus"></i>
+					<a href="<?php echo base_url('tambah_siswa') ?>"><button class="btn btn-primary mt-2"><i class="fa-solid fa-plus"></i>
 							Tambah</button></a>
-					<a href="<?php echo base_url('user/naik/') ?>"><button class="btn btn-secondary mt-2" style="color: #ffffff;"><i class="fa-solid fa-plus"></i>
-							Naik Kelas</button></a>
 					<!-- <div class="btn-group">
 						<div class="dropdown">
 							<button class="btn btn-success btn-block dropdown-toggle me-1 mt-2" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -116,9 +114,9 @@
 									<td><?php echo $b->nama_siswa ?> </td>
 									<td><?php echo $b->nama_kelas . '.' . $b->nama_r . ' - ' . $b->nama_jurusan ?></td>
 									<td>
-										<a href="<?php echo base_url('data_siswa/edit_siswa/' . $b->user) ?>" class="btn btn-warning my-1"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
+										<a href="<?php echo base_url('edit_siswa/' . $b->user) ?>" class="btn btn-warning my-1"><i class="fa-solid fa-pen-to-square" style="color: #ffffff;"></i></a>
 
-										<a href="<?php echo base_url('data_siswa/delete_siswa/' . $b->user) ?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
+										<a href="<?php echo base_url('delete_siswa/' . $b->user) ?>" class="btn btn-danger my-1"><i class="fa-solid fa-trash"></i></a>
 									</td>
 								</tr>
 							<?php

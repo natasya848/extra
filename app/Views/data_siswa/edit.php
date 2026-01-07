@@ -25,7 +25,8 @@
 
 		<section class="section">
 			<div class="card">
-				<form action="<?= base_url('data_siswa/aksi_edit_siswa/') ?>" method="post" class="row g-3" enctype="multipart/form-data">
+				<form action="<?= base_url('aksi_edit_siswa/' . $jojo->user) ?>" method="post" class="row g-3" enctype="multipart/form-data">
+					<?= csrf_field() ?>
 					<input type="hidden" name="id" value="<?php echo $rizkan->id_user ?>">
 					<input type="hidden" name="id2" value="<?php echo $jojo->user ?>">
 

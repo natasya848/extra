@@ -38,7 +38,8 @@
             <div class="card-header">
             </div>
             <div class="card-body pt-2">
-              <form action="<?= base_url('ekstra/aksi_tambah_ekstra') ?>" method="post" enctype="multipart/form-data">
+              <form action="<?= base_url('aksi_tambah_ekstra') ?>" method="post" enctype="multipart/form-data">
+                <?= csrf_field() ?>
                 
                 <div class="mb-3">
                   <label for="nama_ekstra" class="form-label">Nama Ekskul</label>

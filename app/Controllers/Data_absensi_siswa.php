@@ -7,13 +7,6 @@ use App\Models\Universal\MenuModel;
 
 class Data_absensi_siswa extends BaseController
 {
-    public function __construct()
-    {
-        $this->menuModel = new MenuModel();
-        $this->session = session();
-         $this->db = \Config\Database::connect();
-        helper(['url', 'log']);
-    }
     // public function index()
     // {
     //     if (session()->get('level') == 4 || session()->get('level') == 5) {

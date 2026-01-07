@@ -48,7 +48,7 @@ class Login extends BaseController
             }
         }
 
-        $M_user = new \App\Models\M_user();
+        $M_user = new M_user();
         $user = $M_user->where('email', $email)->first();
 
         if (!$user) {
@@ -67,20 +67,21 @@ class Login extends BaseController
             'id_user'        => (int) $user['id_user'],
             'email'          => $user['email'],
             'nama'           => $user['nama'],
-            'role'           => $user['role'],
+            'level'           => $user['level'],
             'isLoggedIn'     => true,
             'last_activity' => time()
         ]);
 
-        if ($user['role'] === 'admin') {
+        $allowedLevel = ['1', '2', '3', '4'];
+
+        if (in_array($user['level'], $allowedLevel)) {
             return redirect()->to('home');
-        } elseif ($user['role'] === 'user') {
-            return redirect()->to('home/user');
         } else {
             $session->destroy();
             $session->setFlashdata('error', 'Akses ditolak.');
             return redirect()->to('login');
         }
+
     }
 
 }

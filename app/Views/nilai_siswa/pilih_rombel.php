@@ -43,15 +43,14 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <div class="col-md-6">
-                                <label for="id_blok" class="form-label">Filter Blok</label>
-                                <select name="id_blok" id="id_blok" class="form-select">
-                                    <option value="">- Pilih Blok -</option>
-                                    <?php foreach ($blokList as $blok): ?>
-                                        <option value="<?= $blok->id_blok ?>"><?= $blok->nama_b ?></option>
-                                    <?php endforeach; ?>
-                                </select>
-                            </div>
+                            <div class="col-md-6"> 
+                                <label for="id_semester" class="form-label">Filter Semester</label> 
+                                <select name="id_semester" id="id_semester" class="form-select"> 
+                                    <option value="">- Pilih Semester -</option> <?php foreach ($semesterList as $semester): ?> 
+                                        <option value="<?= $semester->id_semester ?>"><?= $semester->nama_s ?></option> 
+                                        <?php endforeach; ?> 
+                                    </select> 
+                                </div>
                         </div>
                     </div>
                     <div class="card-body">
@@ -67,7 +66,7 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-                            <p id="no-blok-info" class="text-muted" style="<?= ($id_blok) ? 'display:none;' : '' ?>">
+                            <p id="no-blok-info" class="text-muted" style="<?= ($id_semester) ? 'display:none;' : '' ?>">
                                 Silakan pilih blok terlebih dahulu untuk menampilkan daftar rombel.
                             </p>
                         </div>
@@ -82,9 +81,10 @@
 <script>
     $(document).ready(function () {
         const allRombels = <?= json_encode($rombels); ?>;
-        const initialBlok = '<?= $id_blok ?? '' ?>';
+        const initialBlok = '<?= $id_semester ?? '' ?>';
+        const baseUrl = '<?= base_url('nilai_perkelas') ?>'; // simpan base_url di JS
 
-        const $blokSelect = $('#id_blok');
+        const $blokSelect = $('#id_semester');
         const $tableRombel = $('#table-rombel');
         const $noBlokInfo = $('#no-blok-info');
 
@@ -104,48 +104,50 @@
                 ]
             });
 
-        function renderTable(data) {
-            table.clear();
+            function renderTable(data) {
+                table.clear();
 
-            if (data.length > 0) {
-                $.each(data, function (i, rombel) {
-                    table.row.add([
-                        i + 1,
-                        `${rombel.nama_kelas} . ${rombel.nama_r}, ${rombel.jurusan_detail} - ${rombel.nama_jenjang}`,
-                        rombel.nama || '-',
-                        `<a href="<?= base_url('nilai_siswa/nilai_kelas') ?>/${rombel.id_rombel}" class="btn btn-primary btn-lg fw-bold">
-                            <i class="fas fa-eye me-1"></i> Lihat Nilai
-                        </a>`
-                    ]);
-                });
-            } else {
-                table.row.add(['', 'Tidak ada data rombel untuk blok ini.', '', '']);
+                if (data.length > 0) {
+                    $.each(data, function (i, rombel) {
+                        let url = `<?= base_url('nilai_perkelas') ?>/${rombel.id_rombel}/${rombel.id_semester}`;
+                        table.row.add([
+                            i + 1,
+                            `${rombel.nama_kelas} . ${rombel.nama_r}, ${rombel.jurusan_detail} - ${rombel.nama_jenjang}`,
+                            rombel.nama || '-',
+                            `<a href="${url}" class="btn btn-primary btn-lg fw-bold">
+                                <i class="fas fa-eye me-1"></i> Lihat Nilai
+                            </a>`
+                        ]);
+                    });
+                } else {
+                    table.row.add(['', 'Tidak ada data rombel untuk blok ini.', '', '']);
+                }
+
+                table.draw();
             }
 
-            table.draw();
-        }
+            function handleBlokChange(blokId) {
+                if (!blokId) {
+                    $noBlokInfo.show();
+                    table.clear().draw();
+                    return;
+                }
 
-        function handleBlokChange(blokId) {
-            if (!blokId) {
-                $noBlokInfo.show();
-                table.clear().draw();
-                return;
+                $noBlokInfo.hide();
+
+                const filtered = allRombels.filter(r => r.id_semester == blokId);
+                renderTable(filtered);
             }
 
-            $noBlokInfo.hide();
+            handleBlokChange(initialBlok);
 
-            const filtered = allRombels.filter(r => r.id_blok == blokId);
-            renderTable(filtered);
+            $blokSelect.on('change', function () {
+                const selectedBlok = $(this).val();
+                handleBlokChange(selectedBlok);
+            });
+        } else {
+            console.warn('⚠️ Elemen #table-rombel tidak ditemukan. DataTable tidak diinisialisasi.');
         }
-
-        handleBlokChange(initialBlok);
-
-        $blokSelect.on('change', function () {
-            const selectedBlok = $(this).val();
-            handleBlokChange(selectedBlok);
-        });
-    } else {
-        console.warn('⚠️ Elemen #table-rombel tidak ditemukan. DataTable tidak diinisialisasi.');
-    }
-});
+    });
 </script>
+
