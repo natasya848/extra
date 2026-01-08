@@ -69,6 +69,8 @@ $routes->post('hapus', 'Nilai_siswa::hapus');
 $routes->get('absensi', 'Absensi::index');
 $routes->post('simpan', 'Absensi::simpan');
 $routes->get('get_status_by_date', 'Absensi::get_status_by_date');
+$routes->get('absen_saya', 'Absensi::absen_saya');
+
 
 
 $routes->get('daftar', 'Ekstra::daftar');
